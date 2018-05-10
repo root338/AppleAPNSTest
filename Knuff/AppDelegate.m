@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import <Fabric/Fabric.h>
+//#import <Fabric/Fabric.h>
 #import <Crashlytics/Crashlytics.h>
 
 @interface AppDelegate ()
@@ -17,7 +17,7 @@
 @implementation AppDelegate
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
-  [Fabric with:@[[Crashlytics class]]];
+//  [Fabric with:@[[Crashlytics class]]];
 }
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification {

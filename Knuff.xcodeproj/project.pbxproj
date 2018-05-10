@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1832C26820A164D900D671ED /* Knuff.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1832C26720A164D800D671ED /* Knuff.framework */; };
+		1832C26A20A1688700D671ED /* Fragaria.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1832C26920A1688600D671ED /* Fragaria.framework */; };
+		1832C26B20A16A5600D671ED /* Fragaria.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1832C26920A1688600D671ED /* Fragaria.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E4F537C71E02DBBCEE7E4B79 /* libPods-Knuff.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4664BA2573F4204E05EDA01A /* libPods-Knuff.a */; };
 		F402B938202B9D6200E3F6A4 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F402B936202B9D6200E3F6A4 /* Crashlytics.framework */; };
 		F402B939202B9D6200E3F6A4 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F402B937202B9D6200E3F6A4 /* Fabric.framework */; };
@@ -27,8 +30,6 @@
 		F4592A111AB475D000041A6C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4592A0F1AB475D000041A6C /* Main.storyboard */; };
 		F46BBD1E1AB6251A00E86409 /* APNSServiceBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = F46BBD1D1AB6251A00E86409 /* APNSServiceBrowser.m */; };
 		F46BBD241AB626AD00E86409 /* APNSServiceDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = F46BBD231AB626AD00E86409 /* APNSServiceDevice.m */; };
-		F46BF9031C148A8F003ED597 /* Fragaria.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F46BF9001C148A60003ED597 /* Fragaria.framework */; };
-		F46BF9041C148A8F003ED597 /* Fragaria.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F46BF9001C148A60003ED597 /* Fragaria.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F4D0C7281C4455CE0030EC8F /* Knuff.p12 in Resources */ = {isa = PBXBuildFile; fileRef = F4D0C7271C4455CE0030EC8F /* Knuff.p12 */; };
 		F4D364BF1E466E5E00D8EBCC /* dsa_pub.pem in Resources */ = {isa = PBXBuildFile; fileRef = F4D364BE1E466E5D00D8EBCC /* dsa_pub.pem */; };
 /* End PBXBuildFile section */
@@ -99,7 +100,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				F46BF9041C148A8F003ED597 /* Fragaria.framework in Embed Frameworks */,
+				1832C26B20A16A5600D671ED /* Fragaria.framework in Embed Frameworks */,
 				F42CC4B61C565BEB00F10549 /* Sparkle.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -108,6 +109,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1832C26720A164D800D671ED /* Knuff.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Knuff.framework; sourceTree = "<group>"; };
+		1832C26920A1688600D671ED /* Fragaria.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fragaria.framework; sourceTree = "<group>"; };
 		4664BA2573F4204E05EDA01A /* libPods-Knuff.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Knuff.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9770263A3A3A9B43628811DF /* Pods-Knuff.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Knuff.release.xcconfig"; path = "Pods/Target Support Files/Pods-Knuff/Pods-Knuff.release.xcconfig"; sourceTree = "<group>"; };
 		DC2EADEF87C1C11E371F946F /* Pods-Knuff.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Knuff.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Knuff/Pods-Knuff.debug.xcconfig"; sourceTree = "<group>"; };
@@ -155,8 +158,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				F42CC4B51C565BEB00F10549 /* Sparkle.framework in Frameworks */,
+				1832C26A20A1688700D671ED /* Fragaria.framework in Frameworks */,
 				F402B939202B9D6200E3F6A4 /* Fabric.framework in Frameworks */,
-				F46BF9031C148A8F003ED597 /* Fragaria.framework in Frameworks */,
+				1832C26820A164D900D671ED /* Knuff.framework in Frameworks */,
 				F402B938202B9D6200E3F6A4 /* Crashlytics.framework in Frameworks */,
 				E4F537C71E02DBBCEE7E4B79 /* libPods-Knuff.a in Frameworks */,
 			);
@@ -288,6 +292,8 @@
 		F4CBBBD51AC328D000ED7B44 /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				1832C26920A1688600D671ED /* Fragaria.framework */,
+				1832C26720A164D800D671ED /* Knuff.framework */,
 				F402B936202B9D6200E3F6A4 /* Crashlytics.framework */,
 				F402B937202B9D6200E3F6A4 /* Fabric.framework */,
 				F42CC4B41C565BEB00F10549 /* Sparkle.framework */,
@@ -310,7 +316,6 @@
 				F43C1EEA1AC329C9001D9501 /* Embed Frameworks */,
 				3EB8D0D35774DECFB29FAA7F /* [CP] Embed Pods Frameworks */,
 				05A1DB78D60784A3D04A0F7D /* [CP] Copy Pods Resources */,
-				F402B935202B9D3200E3F6A4 /* Fabric */,
 			);
 			buildRules = (
 			);
@@ -333,7 +338,7 @@
 				TargetAttributes = {
 					F45929FC1AB475D000041A6C = {
 						CreatedOnToolsVersion = 6.2;
-						DevelopmentTeam = N2ML8MSSRH;
+						DevelopmentTeam = 29W9687J6A;
 						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
@@ -487,20 +492,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		F402B935202B9D3200E3F6A4 /* Fabric */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = Fabric;
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "./Fabric.framework/run 0 1";
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -648,10 +639,19 @@
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = N2ML8MSSRH;
+				DEVELOPMENT_TEAM = 29W9687J6A;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Vendor",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)/**",
+					"${SRCROOT}/**",
+					"\"${PODS_ROOT}/Headers/Public\"/**",
+					"\"${PODS_ROOT}/Headers/Public/KVOController\"/**",
+					"\"${PODS_ROOT}/Headers/Public/Mantle\"/**",
+					"\"${PODS_ROOT}/Headers/Public/pop\"/**",
 				);
 				INFOPLIST_FILE = Knuff/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
@@ -671,10 +671,19 @@
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = N2ML8MSSRH;
+				DEVELOPMENT_TEAM = 29W9687J6A;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Vendor",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)/**",
+					"${SRCROOT}/**",
+					"\"${PODS_ROOT}/Headers/Public\"/**",
+					"\"${PODS_ROOT}/Headers/Public/KVOController\"/**",
+					"\"${PODS_ROOT}/Headers/Public/Mantle\"/**",
+					"\"${PODS_ROOT}/Headers/Public/pop\"/**",
 				);
 				INFOPLIST_FILE = Knuff/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";

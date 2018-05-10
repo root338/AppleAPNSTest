@@ -130,6 +130,9 @@
 }
 
 - (IBAction)chooseIdentity:(id)sender {
+    
+    
+    
   SFChooseIdentityPanel *panel = [SFChooseIdentityPanel sharedChooseIdentityPanel];
   [panel setAlternateButtonTitle:@"Cancel"];
   
